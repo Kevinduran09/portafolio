@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #1e2326;
+    --primary-color: #7718a6;
+    --bg-second-color: #252A2E;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor-header {
+    background: rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.nav-responsive {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION I N I C I O */
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(img/fondo\ \(2\).jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326c3;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+    margin-top: 40px;
+    border: 10px solid var(--primary-color);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+    color: var(--primary-color);
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: var(--primary-color);
+}
+.redes a:hover{
+    transform: translateY(-10px);
+}
+/* Acera de Mi */
+.sobremi {
+    background-color: var(--bg-color);
+    color: #fff;
+    /*       Y eje  X eje */
+    padding: 50px 20px;
+
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobremi .contenido-seccion span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobremi .fila .col li strong {
+    color: var(--primary-color);
+    display: inline-block;
+    width: 130px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 22px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.sobremi button .overplay {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overplay {
+    width: 100%;
+
+}
+
+/* seccion Skills */
+.skills {
+    background-color: var(--bg-second-color);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .fila h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .fila .col {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    padding: 0px 15px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    transition: 2s ease-in 0.1s;
+}
+.active{
+    opacity: 1;
+}
+.card i {
+    font-size: 20em;
+}
+
+.card .card-overplay {
+    position: absolute;
+    border-radius: 30px;
+    top: -1;
+    left: 0;
+    height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.card .card-overplay h3 {
+    margin: 10px 0;
+    color: var(--primary-color);
+    font-family: 'Righteous';
+}
+
+.card .card-overplay p {
+    text-align: justify;
+    margin: 10px 10px;
+}
+.card:hover .card-overplay {
+    background-color: #1e2326;
+    opacity: 0.9;
+    height: 100%;
+}
+
+/* Proyectos */
+
+.proyectos{
+    background-color: var(--bg-color);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.proyectos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.proyectos h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.proyectos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.proyectos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.proyectos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.proyectos .galeria .proyecto .overplay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background:  linear-gradient(rgba(139, 32, 188, 0.8), rgba(139, 32, 188, 0.8)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.proyectos .galeria .proyecto .overplay span{
+    color: #fff;
+}
+.proyectos .galeria .proyecto .overplay h3{
+    transition: 1s ;
+}
+.proyectos .galeria .proyecto .overplay .enlace{
+    margin-top: 0px;
+    transition: 1s ;
+}
+.proyectos .galeria .proyecto .overplay:hover{
+    opacity: 1;
+}
+.proyectos .galeria .proyecto .overplay:hover h3{
+    margin-top: 20px;
+}
+.proyectos .galeria .proyecto .overplay:hover .enlace{
+    margin-bottom: 40px;
+}
+
+.overplay:hover .enlace:hover span{
+    text-decoration: underline;
+   font-size: 20px;
+    transition: 0.2s ease-in 0.1s;
+}
+/* Contacto */
+
+.contacto{
+    background-color: var(--bg-second-color);
+    background: linear-gradient(to top, rgba(6, 7, 7, 0.8), rgba(6, 7, 7, 1)),
+    url(img/fondo-contacto.jpg);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto .contenido-seccion h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+.contacto .contenido-seccion h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    align-self: center;
+    padding: 20px 0px;
+}
+
+.contacto .contenido-seccion .formulario{
+    display: flex;
+    width: 60%;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.contacto .formulario input, .contacto .formulario textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+
+}
+
+.footer{
+    background-color: var(--bg-color);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.footer .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.footer .redes a:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+    transform: translateY(-10px);
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: absolute;
+    left: 48.5%;
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+    transition: .3s;
+}
+.footer .arriba:hover{
+    transform: scale(1.2);
+}
+/* responsive */
+@media screen and (max-width:900px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        background-color: var(--bg-second-color);
+        width: 200px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        padding: 20px 0;
+    }
+
+    .contacto .contenido-seccion {
+        text-align: center;
+    }
+    .contacto .contenido-seccion .formulario{
+        width: 100%;
+    }
+    .footer .arriba{
+        top: -25px;
+        left: 43%;
+    }
+}

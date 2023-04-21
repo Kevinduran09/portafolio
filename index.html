@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Kevin Duran</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img id="perfil-img" src="img/perfil.png" alt="" height="228" width="228">
+            </div>
+            <h1>KEVIN DURAN</h1>
+            <h2>Estudiante de ingenieria en sistemas / enfasis en programación</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Mi nombre es Kevin Duran Martinez.</span> Costarricense, estudio en la universidad Nacional, tercer año de la carrera de sistemas. Me interesa la programación y el desarrollo web, manejo conocimientos en dos de los de los lenguajes más usados en el mundo laboral y estoy aprendiendo sobre el desarrollo web para el front-end con tecnologias como Node-js y MoongoDB</p>
+
+            <div class="fila">
+
+                <!-- datos de mi persona -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li><strong>Fecha</strong>
+                            9-10-2001</li>
+                        <li><strong>Edad</strong>
+                            21 años</li>
+                        <li><strong>Origen</strong>
+                            Costa Rica</li>
+                        <li><strong>Telefono</strong>
+                            +506 87573119</li>
+                        <li><strong>Correo</strong>
+                            kevinduran.net.123@gmail.com</li>
+                        <li><strong>Grado Academico</strong>
+                            Tercer año de carrera</li>
+                    </ul>
+                </div>
+
+                <button>
+                    Descargar CV <i class="fa-solid fa-circle-down"></i>
+                    <span class="overplay"></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+
+                <!-- habilidades tecnicas -->
+                <h3>Habilidades Tecnicas</h3>
+                <div class="col">
+
+
+                    <!-- cards-skill -->
+                    <div class="card">
+                        <i class="fa-brands fa-html5"></i>
+                        <div class="card-overplay">
+                            <h3>HTML</h3>
+                            <p>Experiencia en desarrollo de estructuramiento de paginas web con html.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <div class="card-overplay">
+                            <h3>CSS</h3>
+                            <p>Manejo en la implementacion de estilos CSS para diseño web</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-js"></i>
+                        <div class="card-overplay">
+                            <h3>JAVASCRIPT</h3>
+                            <p>Uso de javascript para el desarrllo de front-end, sé manejar los elementos de una pagina web por medio de las funciones de JS para agregar funcionalidad a un sitio web</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-python"></i>
+                        <div class="card-overplay">
+                            <h3>PYTHON</h3>
+                            <p>Conocimiento basico en el lenguaje de python</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-java"></i>
+                        <div class="card-overplay">
+                            <h3>JAVA</h3>
+                            <p>Manejo de java para la implementacion y creacion de programas de escritorio con intefaces interactivas, us</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>MIS PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/portada.jpg" alt="">
+                    <div class="overplay">
+                        <h3>Proyecto 01</h3>
+                        <p>Descripcion del proyecto</p>
+                        <div class="enlace">
+                            <span>Enlace al repositorio</span>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portada.jpg" alt="">
+                    <div class="overplay">
+                        <h3>Proyecto 02</h3>
+                        <p>Descripcion del proyecto</p>
+                        <div class="enlace">
+                            <span>Enlace al repositorio</span>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portada.jpg" alt="">
+                    <div class="overplay">
+                        <h3>Proyecto 03</h3>
+                        <p>Descripcion del proyecto</p>
+                        <div class="enlace">
+                            <span>Enlace al repositorio</span>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portada.jpg" alt="">
+                    <div class="overplay">
+                        <h3>Proyecto 04</h3>
+                        <p>Descripcion del proyecto</p>
+                        <div class="enlace">
+                            <span>Enlace al repositorio</span>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portada.jpg" alt="">
+                    <div class="overplay">
+                        <h3>Proyecto 05</h3>
+                        <p>Descripcion del proyecto</p>
+                        <div class="enlace">
+                            <span>Enlace al repositorio</span>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portada.jpg" alt="">
+                    <div class="overplay">
+                        <h3>Proyecto 06</h3>
+                        <p>Descripcion del proyecto</p>
+                        <div class="enlace">
+                            <span>Enlace al repositorio</span>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+
+            <div class="formulario" id="form">
+                <h3>Ponte en contacto conmigo</h3>
+                <input type="text" placeholder="Tú nombre">
+                <input type="text" placeholder="Número telefónico">
+                <input type="text" placeholder="Direccion de correo">
+                <input type="text" placeholder="Situación">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button id="boton" class = "boton" type="submit">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
